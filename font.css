@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+.container {
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 90%; /* Changed from fixed width to percentage */
+    max-width: 350px; /* Added a max-width for larger screens */
+    margin: 50px auto; /* Centered and added space from the top */
+    background-color: white;
+    color: black;
+    padding: 10px; /* Added some padding */
+}
+
+.hrt {
+    height: auto;
+    width: 40px;
+}
+
+.hr {
+    height: auto;
+    width: 30px;
+}
+
+.nahead {
+    display: flex;
+    justify-content: space-between; /* Changed from gap to justify-content */
+    align-items: center;
+}
+
+.scrlprofile {
+    display: flex;
+    gap: 15px;
+}
+
+.yabalefru {
+    display: block;
+}
+
+.yabas {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Added some space between elements */
+}
+
+.veri {
+    width: 20px; /* Adjusted size for smaller screens */
+    height: 20px;
+}
+
+.pp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Added border radius for circular profile picture */
+}
+
+header {
+    height: 50px;
+    border-bottom: 2px solid gray;
+}
+
+.ylp {
+    width: 100%; /* Adjusted to take full container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.lcmb {
+    display: flex;
+    justify-content: space-between; /* Changed from gap to justify-content */
+    align-items: center;
+}
+
+.haz {
+    width: 15px;
+}
+
+.eden {
+    display: flex;
+    gap: 10px;
+}
+
+.qe {
+    width: 30px;
+}
+
+.hsarp {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding: 10px 0; /* Added padding */
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width on small screens */
+        margin-top: 20px; /* Less margin on small screens */
+    }
+    .nahead {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+        gap: 10px; /* Add some gap between stacked elements */
+    }
+    .scrlprofile, .lcmb, .eden {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+        gap: 10px; /* Add some gap between stacked elements */
+    }
+    .hsarp {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        gap: 10px; /* Add some gap between stacked elements */
+    }
+}
